@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="initClock()">
+    <h1 class="h11"> NOTES APP <i class="fas fa-book-open"></i></h1>
+    <div class="datetime">
+        <div class="date">
+            <span id="dayname">Day</span>,
+            <span id="month">month</span>
+            <span id="daynum">00</span>,
+            <span id="year">year</span>
+        </div>
+        <div class="time">
+            <span id="hours">00</span>:
+            <span id="min">00</span>:
+            <span id="seconds">00</span>
+            <span id="period">AM</span>
+        </div>
+    </div>
+    <h1 class="h1"> Created by Hamza Ansari</h1>
+    <button class="add" id="add">
+        <audio src="addBtn.mp3" id="tone"></audio>
+        <i class="fas fa-plus"></i> Add Notes
+    </button>
+    <button class="DelNotes" id="DelNotes">
+        <audio src="delete.mp3" id="tone1"></audio>
+        <i class="fas fa-trash-alt"></i> Delete All Notes
+    </button>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/2.0.3/marked.min.js"></script>
+    <script src="Khalid.js"></script>
+</body>
+
+</html>
